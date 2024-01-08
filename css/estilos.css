@@ -243,4 +243,42 @@ footer .contacto .formulario .boton:hover{
     background-color: #387bea;
 }
 
+footer .redes{
+    background-color: #1E2B38;
+    padding: 60px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+footer .redes a {
+    color: #fff;
+    width: 100px;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .redes .twitter:hover{
+    background-color: #1da1f2;
+    padding: 20px 10px 20px 10px;
+}
+footer .redes .instagram:hover{
+    background-color: #e1306c;
+    padding: 20px 10px 20px 10px;
+}
+footer .redes .youtube:hover{
+    background-color: #ff0000;
+    padding: 20px 10px 20px 10px;
+}
+footer .redes .linkedin:hover{
+    background-color: #004182;
+    padding: 20px 10px 20px 10px;
+}
+footer .redes .github:hover{
+    background-color: #333;
+    padding: 20px 10px 20px 10px;
+}
 
