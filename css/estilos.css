@@ -102,5 +102,19 @@ header .contenedorTexto .texto .profesion{
     font-size: 1em;
     line-height: 30px;
     width: 80%;
-    margin: 40px auto
+    margin: 40px auto 60px auto;
+}
+
+.main .acercaDe .texto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+}
+
+.main .acercaDe .texto .bold{
+    color: #BF9000;
+    text-decoration: underline;
 }
