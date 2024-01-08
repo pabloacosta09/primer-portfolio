@@ -15,9 +15,9 @@
     <header>
         <div class="contenedor">
             <nav class="menu"> 
-                <a href="#">Acerca De</a>
-                <a href="#">Trabajos</a>
-                <a href="#">Contactos</a>
+                <a href="#acercaDe">Acerca De</a>
+                <a href="#trabajos">Trabajos</a>
+                <a href="#contacto">Contacto</a>
             </nav>
 
             <div class="contenedorTexto">
@@ -34,7 +34,7 @@
     </header>
 
     <section class="main">
-        <section class="acercaDe">
+        <section class="acercaDe" id="acercaDe">
             <div class="contenedor">
                 <div class="foto">
                     <img src="img/yo.jpg" alt="pablo" width="150px">
@@ -49,7 +49,7 @@
             </div>
         </section>
 
-        <section class="trabajos">
+        <section class="trabajos" id="trabajos">
             <div class="contenedor">
                 <h3 class="titulo">Trabajos</h3>
                 <div class="contenedorTrabajos">
@@ -138,7 +138,7 @@
     </section>
 
     <footer>
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <div class="contenedor">
                 <h3 class="titulo">Contactos</h3>
 
@@ -161,6 +161,42 @@
             </div>
         </section>
     </footer>
+
+    <script>
+        // Función para el scroll suave
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const sectionPosition = section.getBoundingClientRect().top;
+            const offsetPosition = sectionPosition - 50;
+    
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    
+        // Event listeners para los enlaces de menú
+        document.addEventListener("DOMContentLoaded", function() {
+            const acercaDeLink = document.querySelector('a[href="#acercaDe"]');
+            const trabajosLink = document.querySelector('a[href="#trabajos"]');
+            const contactoLink = document.querySelector('a[href="#contacto"]');
+    
+            acercaDeLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                scrollToSection('acercaDe');
+            });
+    
+            trabajosLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                scrollToSection('trabajos');
+            });
+    
+            contactoLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                scrollToSection('contacto');
+            });
+        });
+    </script>
 </body>
 
 </html>
